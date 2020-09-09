@@ -3,13 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon --watch server server/index.js ",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "popDB": "node server/fakeDB/populate.js"
   },
   "dependencies": {
+    "-": "0.0.1",
+    "@apollo/client": "^3.1.4",
+    "@apollo/react-ssr": "^4.0.0",
+    "apollo-server-express": "^2.10.1",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.3",
     "next": "9.5.3",
-    "react": "16.13.1",
+    "next-with-apollo": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "16.13.1"
   }
 }
